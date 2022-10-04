@@ -58,7 +58,7 @@ header {
     margin-top: 100px;
 } */
 
-.tabla {
+/* .tabla {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@ header {
 .tabla:hover {
     transform: scale(1.2);
     transition: 1s;
-}
+} */
 
 /* .tabla table,
 tr,

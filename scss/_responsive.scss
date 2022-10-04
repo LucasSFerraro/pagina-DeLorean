@@ -1,3 +1,7 @@
+$colores:(
+    gradiente: linear-gradient(to top, rgb(48, 48, 48), rgb(77, 77, 77)),
+    color2: black
+    );
 @media screen and (min-width: 1024px) {
     .main {
         display: grid;
@@ -35,17 +39,21 @@
     }
 
     .logo2 {
-        margin-top: 40px;
+        margin-top: 240px;
     }
+
     .DMC{
+        background: map-get($colores, gradiente );
         width: 90%;
         height: auto;
         justify-self: center;
         align-self: center;
         margin: 20px;
         position: relative;
+        border: 4px solid map-get($colores, color2);
     }
     .DMC2{
+        background: map-get($colores, gradiente );
         width: 90%;
         height: auto;
         margin: 20px;
@@ -53,11 +61,6 @@
         align-self: center;
         position: relative;
     }
-    .tabla{
-        position: relative;
-        top: 55%;
-    }
-}
 
 .footer {
     grid-area: footer;
@@ -89,6 +92,7 @@
 
 .texto_clasico2 {
     grid-area: texto_clasico2;
+}
 }
 
 @media screen and (max-width: 1023px) {
@@ -139,7 +143,6 @@
         width: 90%;
         height: 100%;
     }
-
 
 }
 

@@ -13,33 +13,9 @@ $espacio: 2rem;
     height: 60px;
     border: solid 2px white;
     padding: 15px;
+    margin-top: 240px;
 }
 
-.logo2 {
-    margin-top: 100px;
-}
-.tabla {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: tabla;
-    transition: all 2s ease;
-}
-
-.tabla:hover{
-    transform: scale(1.2);
-    transition: 1s;
-}
-.tabla table,
-tr,
-th,
-td {
-    margin-top: 125px;
-    margin-bottom: 150px;
-    margin-left: 1%;
-    background-color: beige;
-    border: 2px solid black;
-}
 .DMC {
     color: white;
     background: linear-gradient(to top, rgb(48, 48, 48), rgb(77, 77, 77));
