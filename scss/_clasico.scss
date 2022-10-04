@@ -1,0 +1,93 @@
+.foto_clasico {
+    background-image: url("../multimedia/clasico.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 40%;
+    height: 400px;
+    margin: 25px;
+    margin-left: 1%;
+    border: solid 4px black;
+    padding: 15px;
+    grid-area: foto_clasico;
+    transition: all 1s ease;
+}
+
+.foto_clasico2 {
+    background-image: url("../multimedia/clasico2.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 45%;
+    height: 400px;
+    margin: 25px;
+    margin-left: 5%;
+    border: solid 4px black;
+    padding: 15px;
+    transition: all 1s ease;
+}
+
+.foto_clasico3 {
+    background-image: url("../multimedia/clasico3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 40%;
+    height: 400px;
+    margin: 25px;
+    margin-left: 1%;
+    border: solid 4px black;
+    padding: 15px;
+    transition: all 1s ease;
+}
+
+.foto_clasico4 {
+    background-image: url("../multimedia/clasico4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 45%;
+    height: 400px;
+    margin: 25px;
+    margin-left: 5%;
+    border: solid 4px black;
+    padding: 15px;
+    transition: all 1s ease;
+}
+.foto_clasico:hover, .foto_clasico2:hover, .foto_clasico3:hover, .foto_clasico4:hover{
+    transform: scale(1.1);
+}
+.texto_clasico {
+    display: inline-block;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    width: 40%;
+    margin-left: 1%;
+    border: black 4px solid;
+    padding: 10px;
+}
+
+.texto_clasico2 {
+    display: inline-block;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    width: 45%;
+    margin: 25px;
+    margin-left: 6.4%;
+    border: black 4px solid;
+    padding: 10px;
+    position: relative;
+    top: -18px
+}

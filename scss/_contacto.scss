@@ -1,0 +1,19 @@
+.texto__contacto {
+    display: inline-block;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    width: fit-content;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid black 2 px;
+}
+
+.texto__contacto--respuesta {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    margin-bottom: 50px;
+    padding: 10px;
+    position: relative;
+}

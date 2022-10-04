@@ -1,0 +1,368 @@
+@media screen and (min-width: 1024px) {
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 20%;
+        grid-template-areas:
+            "foto1 foto2"
+            "dmc dmc2"
+            "tabla tabla"
+        ;
+        align-content: center;
+        justify-content: center;
+    }
+    .foto1{
+        width: 80%;
+        height: 100%;
+        background-image: url(../multimedia/john_delorean.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-self: center;
+        position: relative;
+        top: 20%;
+    }
+    .foto2{
+        width: 80%;
+        height: 100%;
+        background-image: url(../multimedia/time-machine.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-self: center;
+        position: relative;
+        top: 20%;
+    }
+
+    .logo2 {
+        margin-top: 240px;
+    }
+    .DMC{
+        width: 90%;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        margin: 20px;
+        position: relative;
+    }
+    .DMC2{
+        width: 90%;
+        height: auto;
+        margin: 20px;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+    }
+    .tabla{
+        position: relative;
+        top: 55%;
+    }
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.contenedor_clasico {
+    grid-area: 2;
+}
+
+.foto_clasico {
+    grid-area: foto_clasico;
+}
+
+.foto_clasico2 {
+    grid-area: foto_clasico2;
+}
+
+.foto_clasico3 {
+    grid-area: foto_clasico3;
+}
+
+.foto_clasico4 {
+    grid-area: foto_clasico4;
+}
+
+.texto_clasico {
+    grid-area: texto_clasico;
+}
+
+.texto_clasico2 {
+    grid-area: texto_clasico2;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .contenedor_clasico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 35% 20% 20% 35% 20%;
+        grid-template-areas:
+            "foto_clasico"
+            "texto_clasico"
+            "foto_clasico2"
+            "foto_clasico3"
+            "texto_clasico2"
+            "foto_clasico4"
+        ;
+    }
+
+    .texto_clasico {
+        width: 90%;
+        height: auto;
+    }
+
+    .texto_clasico2 {
+        width: 90%;
+        height: 100%;
+    }
+
+    .foto_clasico {
+        width: 90%;
+        height: 70%;
+    }
+
+    .foto_clasico2 {
+        width: 90%;
+        height: 70%;
+    }
+
+    .foto_clasico3 {
+        width: 90%;
+        height: 100%;
+        position: relative;
+        top: -50px;
+        justify-self: center;
+    }
+
+    .foto_clasico4 {
+        width: 90%;
+        height: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 1023px) {
+    .contenedor_clasico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 30% 50% 50% 35% 50%;
+        grid-template-areas:
+            "foto_clasico"
+            "texto_clasico"
+            "foto_clasico2"
+            "foto_clasico3"
+            "texto_clasico2"
+            "foto_clasico4"
+        ;
+    }
+    
+    .texto_clasico {
+        width: 90%;
+        height: auto;
+        margin-left: 3%;
+    }
+
+    .texto_clasico2 {
+        width: 90%;
+        height: auto;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico {
+        width: 90%;
+        height: 90%;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico2 {
+        width: 90%;
+        height: auto;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico3 {
+        width: 90%;
+        height: 100%;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico4 {
+        width: 90%;
+        height: 100%;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .logo2 {
+        position: relative;
+        top: 1200px;
+    }   
+
+    .main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 45% 35% 45% 35% 20%;
+        grid-template-areas:
+            "foto1"
+            "dmc"
+            "foto2"
+            "dmc2"
+            "tabla"
+        ;
+    }
+    .foto1{
+        background-image: url(../multimedia/john_delorean.jpg);
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 90%;
+        gap: 0rem;
+        justify-self: center;
+        margin-left: 5%;
+    }
+    .foto2{
+        background-image: url(../multimedia/time-machine.jpg);
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 90%;
+        gap: 0rem;
+        justify-self: center;
+        margin-left: 5%;
+    }
+    .DMC{
+        width: 90%;
+        height: auto;
+        justify-self:center;
+        position: relative;
+    }
+    .DMC2{
+        width: 90%;
+        height: auto;
+        justify-self:center;
+        position: relative;
+    }
+}
+@media screen and (max-width: 768px) {
+    .main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 35% 35% 35% 20%;
+        grid-template-areas:
+            "foto1"
+            "dmc"
+            "foto2"
+            "dmc2"
+            "tabla"
+        ;
+    }
+    .foto1{
+        background-image: url(../multimedia/john_delorean.jpg);
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 60%;
+        gap: 0rem;
+        justify-self: center;
+        margin-left: 0%;
+    }
+    .foto2{
+        background-image: url(../multimedia/time-machine.jpg);
+        background-color: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 90%;
+        height: 50%;
+        gap: 0rem;
+        justify-self: center;
+        margin-left: 0%;
+    }
+    .DMC{
+        width: 100%;
+        height: auto;
+        justify-self:center;
+        position: relative;
+        top: -20%;
+        padding: 2px;
+    }
+    .DMC2{
+        width: 90%;
+        height: auto;
+        justify-self:center;
+        position: relative;
+        top: -30%;
+        padding: 2px;
+    }   
+    .contenedor_clasico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 30% 30% 30% 35% 30%;
+        grid-template-areas:
+            "foto_clasico"
+            "texto_clasico"
+            "foto_clasico2"
+            "foto_clasico3"
+            "texto_clasico2"
+            "foto_clasico4"
+        ;
+    }
+    
+    .texto_clasico {
+        width: 90%;
+        height: auto;
+        margin-left: 3%;
+    }
+
+    .texto_clasico2 {
+        width: 90%;
+        height: auto;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico {
+        width: 90%;
+        height: 90%;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico2 {
+        width: 90%;
+        height: auto;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico3 {
+        width: 90%;
+        height: 100%;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .foto_clasico4 {
+        width: 90%;
+        height: 100%;
+        justify-self: center;
+        margin-left: 1%;
+    }
+
+    .logo2 {
+        position: relative;
+        top: 1000px;
+    }
+}

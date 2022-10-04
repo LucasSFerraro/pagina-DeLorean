@@ -1,0 +1,80 @@
+.concepto1 {
+    background-image: url("../multimedia/dmc-24.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 80%;
+    height: 600px;
+    margin: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.concepto2 {
+    background-image: url("../multimedia/delorean-alpha-2-concept.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 80%;
+    height: 600px;
+    margin: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.concepto3 {
+    background-image: url("../multimedia/delorean-alpha-3-concept.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 80%;
+    height: 600px;
+    margin: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.concepto4 {
+    background-image: url("../multimedia/delorean-alpha-4-concept.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 80%;
+    height: 600px;
+    margin: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.texto_concepto {
+    display: inline-block;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: black 4px solid;
+    padding: 10px;
+    position: relative;
+    top: -50px
+}

@@ -1,0 +1,86 @@
+.foto_nuevo {
+    background-image: url("../multimedia/alpha5-1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 35%;
+    height: 400px;
+    margin: 25px;
+    margin-left: 1%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.foto_nuevo2 {
+    background-image: url("../multimedia/Alpha5-2");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 35%;
+    height: 400px;
+    margin: 25px;
+    margin-left: 5%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.foto_nuevo3 {
+    background-image: url("../multimedia/Alpha5-3.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 35%;
+    height: 500px;
+    margin: 25px;
+    margin-left: 1%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.foto_nuevo4 {
+    background-image: url("../multimedia/Alpha5-4.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: inline-block;
+
+    width: 35%;
+    height: 500px;
+    margin: 25px;
+    margin-left: 5%;
+    border: solid 4px black;
+    padding: 15px;
+}
+
+.texto_nuevo {
+    display: inline-block;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    width: 35%;
+    margin-left: 1%;
+    border: black 4px solid;
+    padding: 10px;
+}
+
+.texto_nuevo2 {
+    display: inline-block;
+    color: white;
+    background-color: rgb(61, 61, 61);
+    width: 35%;
+    margin: 25px;
+    margin-left: 6.4%;
+    border: black 4px solid;
+    padding: 10px;
+    position: relative;
+    top: -18px
+}

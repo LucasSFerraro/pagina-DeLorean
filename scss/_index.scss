@@ -1,0 +1,76 @@
+$espacio: 2rem;
+
+.logo2 {
+    background-image: url("../multimedia/DMC-Emblem.png");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+
+    width: 200px;
+    height: 60px;
+    border: solid 2px white;
+    padding: 15px;
+}
+
+.logo2 {
+    margin-top: 100px;
+}
+.tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tabla;
+    transition: all 2s ease;
+}
+
+.tabla:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.tabla table,
+tr,
+th,
+td {
+    margin-top: 125px;
+    margin-bottom: 150px;
+    margin-left: 1%;
+    background-color: beige;
+    border: 2px solid black;
+}
+.DMC {
+    color: white;
+    background: linear-gradient(to top, rgb(48, 48, 48), rgb(77, 77, 77));
+    border: black 4px solid;
+    padding: 10px;
+    grid-area: DMC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    grid-area: dmc;
+    transition: height 3s;
+}
+
+.DMC2 {
+    color: white;
+    background: linear-gradient(to top, rgb(48, 48, 48), rgb(77, 77, 77));
+    border: black 4px solid;
+    padding: 10px;
+    grid-area: DMC2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $espacio;
+    grid-area: dmc2;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $espacio;
+    grid-area: texto;
+}
