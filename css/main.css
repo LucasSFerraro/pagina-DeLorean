@@ -365,7 +365,7 @@ body {
     grid-template-areas: "foto1 foto2" "dmc dmc2" "tabla tabla";
     align-content: center;
     justify-content: center; }
-  .foto1 {
+  .foto1, .foto2 {
     width: 80%;
     height: 100%;
     background-image: url(../multimedia/john_delorean.jpg);
@@ -376,15 +376,7 @@ body {
     position: relative;
     top: 20%; }
   .foto2 {
-    width: 80%;
-    height: 100%;
-    background-image: url(../multimedia/time-machine.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-self: center;
-    position: relative;
-    top: 20%; }
+    background-image: url(../multimedia/time-machine.jpg); }
   .logo2 {
     margin-top: 240px; }
   .DMC {
@@ -492,7 +484,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 45% 35% 45% 35% 20%;
     grid-template-areas: "foto1" "dmc" "foto2" "dmc2" "tabla"; }
-  .foto1 {
+  .foto1, .foto2 {
     background-image: url(../multimedia/john_delorean.jpg);
     background-color: black;
     background-position: center;
@@ -531,7 +523,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 25% 35% 35% 35% 20%;
     grid-template-areas: "foto1" "dmc" "foto2" "dmc2" "tabla"; }
-  .foto1 {
+  .foto1, .foto2 {
     background-image: url(../multimedia/john_delorean.jpg);
     background-color: black;
     background-position: center;

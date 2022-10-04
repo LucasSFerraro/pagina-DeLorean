@@ -2,6 +2,11 @@ $colores:(
     gradiente: linear-gradient(to top, rgb(48, 48, 48), rgb(77, 77, 77)),
     color2: black
     );
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 @media screen and (min-width: 1024px) {
     .main {
         display: grid;
@@ -27,15 +32,9 @@ $colores:(
         top: 20%;
     }
     .foto2{
-        width: 80%;
-        height: 100%;
+        @extend .foto1;
         background-image: url(../multimedia/time-machine.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-self: center;
-        position: relative;
-        top: 20%;
+
     }
 
     .logo2 {
@@ -44,8 +43,7 @@ $colores:(
 
     .DMC{
         background: map-get($colores, gradiente );
-        width: 90%;
-        height: auto;
+        @include sizes(90%, auto);
         justify-self: center;
         align-self: center;
         margin: 20px;
@@ -54,8 +52,7 @@ $colores:(
     }
     .DMC2{
         background: map-get($colores, gradiente );
-        width: 90%;
-        height: auto;
+        @include sizes(90%, auto);
         margin: 20px;
         justify-self: center;
         align-self: center;
@@ -112,36 +109,30 @@ $colores:(
     }
 
     .texto_clasico {
-        width: 90%;
-        height: auto;
+        @include sizes(90%, auto);
     }
 
     .texto_clasico2 {
-        width: 90%;
-        height: 100%;
+        @include sizes(90%, 100%);
     }
 
     .foto_clasico {
-        width: 90%;
-        height: 70%;
+        @include sizes(90%, 70%);
     }
 
     .foto_clasico2 {
-        width: 90%;
-        height: 70%;
+        @include sizes(90%, 70%);
     }
 
     .foto_clasico3 {
-        width: 90%;
-        height: 100%;
+        @include sizes(90%, 100%);
         position: relative;
         top: -50px;
         justify-self: center;
     }
 
     .foto_clasico4 {
-        width: 90%;
-        height: 100%;
+        @include sizes(90%, 100%);
     }
 
 }
