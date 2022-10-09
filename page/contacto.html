@@ -44,38 +44,21 @@
   </header>
   <!-- Fin del header -->
   <main>
-    <section>
-      <form action="">
-        <label for="nombre" class="texto__contacto">Nombre y apellido:</label>
-        <input type="text" name="nombre" class="texto__contacto--respuesta">
-        <br>
-        <br>
-        <label for="mail" class="texto__contacto">Dirección de correo electrónico:</label>
-        <input type="email" name="mail" class="texto__contacto--respuesta">
-        <br><br>
-        <label for="modelo favorito" class="texto__contacto">Elegir modelo favorito</label>
-        <select name="modelo favorito" id="" class="texto__contacto--respuesta">
-          <option value="old">DMC Delorean</option>
-          <option value="new">DeLorean Alpha5</option>
-          <option value="c1">DMC-24</option>
-          <option value="c2">Alpha2</option>
-          <option value="c3">Alpha3</option>
-          <option value="c4">Alpha4</option>
-        </select>
-        <br><br>
-        <label for="info" class="texto__contacto">Aceptas terminos y condiciones(?)</label>
-        <input type="checkbox" name="info" value="1">
-        <br><br>
-        <input type="submit" value="Enviar" class="texto__contacto">
-        <input type="reset" value="Reiniciar" class="texto__contacto">
+      <form action="" class="preguntas grid">
+        <label for="nombre" class="texto__contacto pr1">Nombre y apellido:</label>
+        <input type="text" name="nombre" class="texto__contacto--respuesta rs1">
+        <label for="mail" class="texto__contacto pr2">Mail:</label>
+        <input type="email" name="mail" class="texto__contacto--respuesta rs2">
+        <label for="info" class="texto__contacto pr3">Desea recibir noticias?</label>
+        <input type="checkbox" name="info" value="1" class="rs3">
+        <input type="submit" value="Enviar" class="texto__contacto pr4">
+        <input type="reset" value="Reiniciar" class="texto__contacto rs4">
       </form>
-    </section>
   </main>
 
   <footer>
     <!-- Logo y link al header -->
     <div class="logo2"></div>
-    <a href="#header" class="menus__list--subir">Subir</a>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
