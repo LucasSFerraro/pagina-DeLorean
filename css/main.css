@@ -343,9 +343,7 @@ body {
   display: inline-block;
   color: white;
   background-color: #3d3d3d;
-  width: fit-content;
-  margin-bottom: 20px;
-  padding: 10px;
+  padding: 5px;
   border: solid black 2 px; }
 
 .texto__contacto--respuesta {
@@ -353,9 +351,108 @@ body {
   color: black;
   background-color: white;
   width: fit-content;
-  margin-bottom: 50px;
-  padding: 10px;
-  position: relative; }
+  position: relative;
+  justify-content: center; }
+
+.preguntas {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "pr1 rs1" "pr2 rs2" "pr3 rs3" "pr4 rs4"; }
+
+.rs1 {
+  justify-self: start;
+  align-self: center;
+  grid-area: rs1;
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.pr2 {
+  justify-self: end;
+  align-self: center;
+  grid-area: pr2;
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.rs2 {
+  justify-self: start;
+  align-self: center;
+  grid-area: rs2;
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.pr3 {
+  justify-self: end;
+  align-self: center;
+  grid-area: pr3;
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.rs3 {
+  justify-self: start;
+  align-self: center;
+  grid-area: rs3;
+  width: 20px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.pr4 {
+  justify-self: end;
+  align-self: center;
+  grid-area: pr4;
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.rs4 {
+  justify-self: start;
+  align-self: center;
+  grid-area: rs4;
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.pr1 {
+  justify-self: end;
+  align-self: center;
+  grid-area: pr1;
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.logo2c {
+  background-image: url("../multimedia/DMC-Emblem.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 200px;
+  height: 60px;
+  border: solid 2px white;
+  padding: 15px;
+  margin-top: 28.2%; }
 
 @media screen and (min-width: 1024px) {
   .main {
