@@ -1,4 +1,19 @@
-.foto_nuevo {
+.logo2N{
+    background-image: url("../multimedia/DMC-Emblem.png");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+
+    width: 200px;
+    height: 60px;
+    border: solid 2px white;
+    padding: 15px;
+    margin-top: 300px;
+}
+.foto_nuevo{
     background-image: url("../multimedia/alpha5-1.webp");
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +49,7 @@
     display: inline-block;
 
     width: 90%;
-    height: 400px;
+    height: 500px;
     border: solid 4px black;
     align-self: start;
     justify-self: center;
@@ -50,7 +65,7 @@
     display: inline-block;
 
     width: 90%;
-    height: 400px;
+    height: 500px;
     border: solid 4px black;
     align-self: start;
     justify-self: center;

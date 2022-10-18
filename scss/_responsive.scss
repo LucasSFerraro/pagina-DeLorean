@@ -1,7 +1,8 @@
-$colores:(
+$colores: (
     gradiente: linear-gradient(to top, rgb(48, 48, 48), rgb(77, 77, 77)),
     color2: black
-    );
+);
+
 @mixin sizes($width, $height) {
     width: $width;
     height: $height;
@@ -20,7 +21,8 @@ $colores:(
         align-content: center;
         justify-content: center;
     }
-    .foto1{
+
+    .foto1 {
         width: 80%;
         height: 100%;
         background-image: url(../multimedia/john_delorean.jpg);
@@ -31,18 +33,16 @@ $colores:(
         position: relative;
         top: 20%;
     }
-    .foto2{
+
+    .foto2 {
         @extend .foto1;
         background-image: url(../multimedia/time-machine.jpg);
 
     }
 
-    .logo2 {
-        margin-top: 240px;
-    }
 
-    .DMC{
-        background: map-get($colores, gradiente );
+    .DMC {
+        background: map-get($colores, gradiente);
         @include sizes(90%, auto);
         justify-self: center;
         align-self: center;
@@ -50,8 +50,9 @@ $colores:(
         position: relative;
         border: 4px solid map-get($colores, color2);
     }
-    .DMC2{
-        background: map-get($colores, gradiente );
+
+    .DMC2 {
+        background: map-get($colores, gradiente);
         @include sizes(90%, auto);
         margin: 20px;
         justify-self: center;
@@ -59,37 +60,37 @@ $colores:(
         position: relative;
     }
 
-.footer {
-    grid-area: footer;
-}
+    .footer {
+        grid-area: footer;
+    }
 
-.contenedor_clasico {
-    grid-area: 2;
-}
+    .contenedor_clasico {
+        grid-area: 2;
+    }
 
-.foto_clasico {
-    grid-area: foto_clasico;
-}
+    .foto_clasico {
+        grid-area: foto_clasico;
+    }
 
-.foto_clasico2 {
-    grid-area: foto_clasico2;
-}
+    .foto_clasico2 {
+        grid-area: foto_clasico2;
+    }
 
-.foto_clasico3 {
-    grid-area: foto_clasico3;
-}
+    .foto_clasico3 {
+        grid-area: foto_clasico3;
+    }
 
-.foto_clasico4 {
-    grid-area: foto_clasico4;
-}
+    .foto_clasico4 {
+        grid-area: foto_clasico4;
+    }
 
-.texto_clasico {
-    grid-area: texto_clasico;
-}
+    .texto_clasico {
+        grid-area: texto_clasico;
+    }
 
-.texto_clasico2 {
-    grid-area: texto_clasico2;
-}
+    .texto_clasico2 {
+        grid-area: texto_clasico2;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -151,7 +152,7 @@ $colores:(
             "foto_clasico4"
         ;
     }
-    
+
     .texto_clasico {
         width: 90%;
         height: auto;
@@ -192,11 +193,6 @@ $colores:(
         justify-self: center;
         margin-left: 1%;
     }
-
-    .logo2 {
-        position: relative;
-        top: 1200px;
-    }   
 
     .main {
         display: grid;
@@ -210,7 +206,8 @@ $colores:(
             "tabla"
         ;
     }
-    .foto1{
+
+    .foto1 {
         background-image: url(../multimedia/john_delorean.jpg);
         background-color: black;
         background-position: center;
@@ -222,7 +219,8 @@ $colores:(
         justify-self: center;
         margin-left: 5%;
     }
-    .foto2{
+
+    .foto2 {
         background-image: url(../multimedia/time-machine.jpg);
         background-color: black;
         background-position: center;
@@ -234,21 +232,24 @@ $colores:(
         justify-self: center;
         margin-left: 5%;
     }
-    .DMC{
+
+    .DMC {
         width: 90%;
         height: auto;
-        justify-self:center;
+        justify-self: center;
         position: relative;
     }
-    .DMC2{
+
+    .DMC2 {
         width: 90%;
         height: auto;
-        justify-self:center;
+        justify-self: center;
         position: relative;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .main{
+    .main {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 25% 35% 35% 35% 20%;
@@ -260,7 +261,8 @@ $colores:(
             "tabla"
         ;
     }
-    .foto1{
+
+    .foto1 {
         background-image: url(../multimedia/john_delorean.jpg);
         background-color: black;
         background-position: center;
@@ -272,7 +274,8 @@ $colores:(
         justify-self: center;
         margin-left: 0%;
     }
-    .foto2{
+
+    .foto2 {
         background-image: url(../multimedia/time-machine.jpg);
         background-color: black;
         background-position: center;
@@ -284,22 +287,25 @@ $colores:(
         justify-self: center;
         margin-left: 0%;
     }
-    .DMC{
+
+    .DMC {
         width: 100%;
         height: auto;
-        justify-self:center;
+        justify-self: center;
         position: relative;
         top: -20%;
         padding: 2px;
     }
-    .DMC2{
+
+    .DMC2 {
         width: 90%;
         height: auto;
-        justify-self:center;
+        justify-self: center;
         position: relative;
         top: -30%;
         padding: 2px;
-    }   
+    }
+
     .contenedor_clasico {
         display: grid;
         grid-template-columns: 100%;
@@ -313,7 +319,7 @@ $colores:(
             "foto_clasico4"
         ;
     }
-    
+
     .texto_clasico {
         width: 90%;
         height: auto;
@@ -355,8 +361,146 @@ $colores:(
         margin-left: 1%;
     }
 
-    .logo2 {
-        position: relative;
-        top: 1000px;
+}
+
+@media screen and (max-width: 1350px) {
+    .foto_nuevo4 {
+        background-image: url("../multimedia/Alpha5-4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -150px;
+
+        display: inline-block;
+
+        width: 90%;
+        height: 500px;
+        border: solid 4px black;
+        align-self: start;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .foto_nuevo4 {
+        background-image: url("../multimedia/Alpha5-4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        display: inline-block;
+
+        width: 90%;
+        height: 500px;
+        border: solid 4px black;
+        align-self: start;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .foto_nuevo{
+        background-image: url("../multimedia/alpha5-1.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        display: inline-block;
+    
+        width: 90%;
+        height: 200px;
+        border: solid 4px black;
+        margin-left: 5%;
+        align-self: center;
+    }
+    .foto_nuevo2 {
+        background-image: url("../multimedia/Alpha5-2");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        display: inline-block;
+    
+        width: 90%;
+        height: 200px;
+        border: solid 4px black;
+    }
+    .foto_nuevo4 {
+        background-image: url("../multimedia/Alpha5-4.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: inline-block;
+
+        width: 90%;
+        height: 300px;
+        border: solid 4px black;
+        align-self: start;
+        justify-self: center;
+    }
+
+    .foto_nuevo3 {
+        background-image: url("../multimedia/Alpha5-3.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: inline-block;
+
+        width: 90%;
+        height: 300px;
+        border: solid 4px black;
+        align-self: start;
+        justify-self: center;
+    }
+
+    .gridN {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 72% 20%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "n1 n2"
+            "t1 t2"
+            "n3 n4";
+    }
+
+    s .n1 {
+        justify-self: center;
+        align-self: center;
+        grid-area: n1;
+    }
+
+    .n2 {
+        justify-self: center;
+        align-self: center;
+        grid-area: n2;
+    }
+
+    .t1 {
+        justify-self: center;
+        align-self: start;
+        grid-area: t1;
+    }
+
+    .t2 {
+        justify-self: center;
+        align-self: start;
+        grid-area: t2;
+    }
+
+    .n3 {
+        justify-self: center;
+        align-self: start;
+        grid-area: n3;
+    }
+
+    .n4 {
+        justify-self: center;
+        align-self: start;
+        grid-area: n4;
     }
 }

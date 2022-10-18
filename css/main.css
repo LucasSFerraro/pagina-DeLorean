@@ -193,6 +193,19 @@ body {
   position: relative;
   top: -18px; }
 
+.logo2N {
+  background-image: url("../multimedia/DMC-Emblem.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 200px;
+  height: 60px;
+  border: solid 2px white;
+  padding: 15px;
+  margin-top: 300px; }
+
 .foto_nuevo {
   background-image: url("../multimedia/alpha5-1.webp");
   background-position: center;
@@ -222,7 +235,7 @@ body {
   background-size: cover;
   display: inline-block;
   width: 90%;
-  height: 400px;
+  height: 500px;
   border: solid 4px black;
   align-self: start;
   justify-self: center; }
@@ -235,7 +248,7 @@ body {
   background-position-y: -215px;
   display: inline-block;
   width: 90%;
-  height: 400px;
+  height: 500px;
   border: solid 4px black;
   align-self: start;
   justify-self: center; }
@@ -494,8 +507,6 @@ s .n1 {
     top: 20%; }
   .foto2 {
     background-image: url(../multimedia/time-machine.jpg); }
-  .logo2 {
-    margin-top: 240px; }
   .DMC {
     background: linear-gradient(to top, #303030, #4d4d4d);
     width: 90%;
@@ -593,9 +604,6 @@ s .n1 {
     height: 100%;
     justify-self: center;
     margin-left: 1%; }
-  .logo2 {
-    position: relative;
-    top: 1200px; }
   .main {
     display: grid;
     grid-template-columns: 100%;
@@ -709,7 +717,106 @@ s .n1 {
     width: 90%;
     height: 100%;
     justify-self: center;
-    margin-left: 1%; }
-  .logo2 {
-    position: relative;
-    top: 1000px; } }
+    margin-left: 1%; } }
+
+@media screen and (max-width: 1350px) {
+  .foto_nuevo4 {
+    background-image: url("../multimedia/Alpha5-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -150px;
+    display: inline-block;
+    width: 90%;
+    height: 500px;
+    border: solid 4px black;
+    align-self: start;
+    justify-self: center; } }
+
+@media screen and (max-width: 1350px) {
+  .foto_nuevo4 {
+    background-image: url("../multimedia/Alpha5-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 90%;
+    height: 500px;
+    border: solid 4px black;
+    align-self: start;
+    justify-self: center; } }
+
+@media screen and (max-width: 750px) {
+  .foto_nuevo {
+    background-image: url("../multimedia/alpha5-1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 90%;
+    height: 200px;
+    border: solid 4px black;
+    margin-left: 5%;
+    align-self: center; }
+  .foto_nuevo2 {
+    background-image: url("../multimedia/Alpha5-2");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 90%;
+    height: 200px;
+    border: solid 4px black; }
+  .foto_nuevo4 {
+    background-image: url("../multimedia/Alpha5-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 90%;
+    height: 300px;
+    border: solid 4px black;
+    align-self: start;
+    justify-self: center; }
+  .foto_nuevo3 {
+    background-image: url("../multimedia/Alpha5-3.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 90%;
+    height: 300px;
+    border: solid 4px black;
+    align-self: start;
+    justify-self: center; }
+  .gridN {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 72% 20%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "n1 n2" "t1 t2" "n3 n4"; }
+  s .n1 {
+    justify-self: center;
+    align-self: center;
+    grid-area: n1; }
+  .n2 {
+    justify-self: center;
+    align-self: center;
+    grid-area: n2; }
+  .t1 {
+    justify-self: center;
+    align-self: start;
+    grid-area: t1; }
+  .t2 {
+    justify-self: center;
+    align-self: start;
+    grid-area: t2; }
+  .n3 {
+    justify-self: center;
+    align-self: start;
+    grid-area: n3; }
+  .n4 {
+    justify-self: center;
+    align-self: start;
+    grid-area: n4; } }
