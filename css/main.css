@@ -607,30 +607,8 @@ s .n1 {
   .main {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 45% 35% 45% 35% 20%;
-    grid-template-areas: "foto1" "dmc" "foto2" "dmc2" "tabla"; }
-  .foto1, .foto2 {
-    background-image: url(../multimedia/john_delorean.jpg);
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90%;
-    height: 90%;
-    gap: 0rem;
-    justify-self: center;
-    margin-left: 5%; }
-  .foto2 {
-    background-image: url(../multimedia/time-machine.jpg);
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90%;
-    height: 90%;
-    gap: 0rem;
-    justify-self: center;
-    margin-left: 5%; }
+    grid-template-rows: 15% 55% 45%;
+    grid-template-areas: "nada" "dmc" "dmc2"; }
   .DMC {
     width: 90%;
     height: auto;
@@ -646,44 +624,22 @@ s .n1 {
   .main {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 35% 35% 35% 20%;
-    grid-template-areas: "foto1" "dmc" "foto2" "dmc2" "tabla"; }
-  .foto1, .foto2 {
-    background-image: url(../multimedia/john_delorean.jpg);
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90%;
-    height: 60%;
-    gap: 0rem;
-    justify-self: center;
-    margin-left: 0%; }
-  .foto2 {
-    background-image: url(../multimedia/time-machine.jpg);
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90%;
-    height: 50%;
-    gap: 0rem;
-    justify-self: center;
-    margin-left: 0%; }
+    grid-template-rows: 55% 55%;
+    grid-template-areas: "dmc" "dmc2"; }
   .DMC {
-    width: 100%;
+    width: 90%;
     height: auto;
     justify-self: center;
     position: relative;
-    top: -20%;
-    padding: 2px; }
+    padding: 2px;
+    margin: 20px; }
   .DMC2 {
     width: 90%;
     height: auto;
     justify-self: center;
     position: relative;
-    top: -30%;
-    padding: 2px; }
+    padding: 2px;
+    margin: 20px; }
   .contenedor_clasico {
     display: grid;
     grid-template-columns: 100%;
