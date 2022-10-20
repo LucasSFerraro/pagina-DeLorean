@@ -112,86 +112,72 @@ body {
   gap: 2rem;
   grid-area: texto; }
 
+.logo2C {
+  background-image: url("../multimedia/DMC-Emblem.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 200px;
+  height: 60px;
+  border: solid 2px white;
+  padding: 15px;
+  margin-top: 800px; }
+
 .foto_clasico {
   background-image: url("../multimedia/clasico.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: inline-block;
-  width: 40%;
-  height: 400px;
   margin: 25px;
-  margin-left: 1%;
   border: solid 4px black;
   padding: 15px;
   grid-area: foto_clasico;
   transition: all 1s ease; }
 
 .foto_clasico2 {
-  background-image: url("../multimedia/clasico2.webp");
+  background-image: url("../multimedia/clasico2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: inline-block;
-  width: 45%;
-  height: 400px;
   margin: 25px;
-  margin-left: 5%;
   border: solid 4px black;
   padding: 15px;
-  transition: all 1s ease; }
+  transition: all 1s ease;
+  grid-area: foto_clasico2; }
 
 .foto_clasico3 {
   background-image: url("../multimedia/clasico3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: inline-block;
-  width: 40%;
-  height: 400px;
   margin: 25px;
-  margin-left: 1%;
   border: solid 4px black;
   padding: 15px;
-  transition: all 1s ease; }
+  transition: all 1s ease;
+  grid-area: foto_clasico3; }
 
-.foto_clasico4 {
-  background-image: url("../multimedia/clasico4.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  width: 45%;
-  height: 400px;
-  margin: 25px;
-  margin-left: 5%;
-  border: solid 4px black;
-  padding: 15px;
-  transition: all 1s ease; }
-
-.foto_clasico:hover, .foto_clasico2:hover, .foto_clasico3:hover, .foto_clasico4:hover {
+.foto_clasico:hover, .foto_clasico2:hover, .foto_clasico3:hover {
   transform: scale(1.1); }
 
 .texto_clasico {
   display: inline-block;
   color: white;
-  background-color: #3d3d3d;
-  width: 40%;
-  margin-left: 1%;
+  background: linear-gradient(to top, #303030, #4d4d4d);
+  width: 90%;
   border: black 4px solid;
-  padding: 10px; }
+  padding: 10px;
+  grid-area: texto_clasico; }
 
 .texto_clasico2 {
   display: inline-block;
   color: white;
-  background-color: #3d3d3d;
-  width: 45%;
-  margin: 25px;
-  margin-left: 6.4%;
+  background: linear-gradient(to top, #303030, #4d4d4d);
+  width: 90%;
   border: black 4px solid;
   padding: 10px;
-  position: relative;
-  top: -18px; }
+  grid-area: texto_clasico2; }
 
 .logo2N {
   background-image: url("../multimedia/DMC-Emblem.png");
@@ -527,83 +513,88 @@ s .n1 {
   .footer {
     grid-area: footer; }
   .contenedor_clasico {
-    grid-area: 2; }
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 30% 100% 30% 60%;
+    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3"; }
   .foto_clasico {
-    grid-area: foto_clasico; }
+    grid-area: foto_clasico;
+    width: 30%;
+    height: 80%;
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
   .foto_clasico2 {
-    grid-area: foto_clasico2; }
+    grid-area: foto_clasico2;
+    width: 50%;
+    height: 90%;
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
   .foto_clasico3 {
-    grid-area: foto_clasico3; }
-  .foto_clasico4 {
-    grid-area: foto_clasico4; }
+    grid-area: foto_clasico3;
+    width: 30%;
+    height: 80%;
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
   .texto_clasico {
-    grid-area: texto_clasico; }
+    grid-area: texto_clasico;
+    width: 70%;
+    height: 100%;
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
   .texto_clasico2 {
-    grid-area: texto_clasico2; } }
+    grid-area: texto_clasico2;
+    width: 70%;
+    height: 100%;
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
+  .logo2C {
+    margin-top: 1200px; } }
 
 @media screen and (max-width: 1023px) {
   .contenedor_clasico {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 35% 20% 20% 35% 20%;
-    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "foto_clasico3" "texto_clasico2" "foto_clasico4"; }
+    grid-template-rows: 35% 35% 65% 35% 35%;
+    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3"; }
   .texto_clasico {
-    width: 90%;
-    height: auto; }
-  .texto_clasico2 {
-    width: 90%;
-    height: 100%; }
-  .foto_clasico {
-    width: 90%;
-    height: 70%; }
-  .foto_clasico2 {
-    width: 90%;
-    height: 70%; }
-  .foto_clasico3 {
     width: 90%;
     height: 100%;
-    position: relative;
-    top: -50px;
-    justify-self: center; }
-  .foto_clasico4 {
-    width: 90%;
-    height: 100%; } }
-
-@media screen and (max-width: 1023px) {
-  .contenedor_clasico {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 30% 50% 50% 35% 50%;
-    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "foto_clasico3" "texto_clasico2" "foto_clasico4"; }
-  .texto_clasico {
-    width: 90%;
-    height: auto;
-    margin-left: 3%; }
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
   .texto_clasico2 {
     width: 90%;
-    height: auto;
+    height: 100%;
+    display: flexbox;
     justify-self: center;
-    margin-left: 1%; }
+    align-self: center;
+    margin-left: 0%;
+    top: 0px; }
   .foto_clasico {
-    width: 90%;
+    width: 50%;
+    height: 90%;
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
+  .foto_clasico2 {
+    width: 60%;
     height: 90%;
     justify-self: center;
-    margin-left: 1%; }
-  .foto_clasico2 {
-    width: 90%;
-    height: auto;
-    justify-self: center;
-    margin-left: 1%; }
+    align-self: center; }
   .foto_clasico3 {
-    width: 90%;
-    height: 100%;
+    width: 60%;
+    height: 90%;
+    margin-top: 50px;
     justify-self: center;
-    margin-left: 1%; }
-  .foto_clasico4 {
-    width: 90%;
-    height: 100%;
-    justify-self: center;
-    margin-left: 1%; }
+    display: flexbox;
+    align-self: center; } }
+
+@media screen and (max-width: 1023px) {
   .main {
     display: grid;
     grid-template-columns: 100%;
@@ -640,40 +631,41 @@ s .n1 {
     position: relative;
     padding: 2px;
     margin: 20px; }
+  /* Clasico */
   .contenedor_clasico {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 30% 30% 30% 35% 30%;
-    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "foto_clasico3" "texto_clasico2" "foto_clasico4"; }
+    grid-template-rows: 15% 40% 35% 40% 15%;
+    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3"; }
   .texto_clasico {
-    width: 90%;
-    height: auto;
-    margin-left: 3%; }
+    width: 70%;
+    height: 110%; }
   .texto_clasico2 {
-    width: 90%;
-    height: auto;
-    justify-self: center;
-    margin-left: 1%; }
+    width: 70%;
+    height: 110%; }
   .foto_clasico {
-    width: 90%;
-    height: 90%;
-    justify-self: center;
-    margin-left: 1%; }
+    width: 80%;
+    height: 65%;
+    justify-self: center; }
   .foto_clasico2 {
     width: 90%;
-    height: auto;
+    height: 60%;
     justify-self: center;
-    margin-left: 1%; }
+    margin-left: 25px; }
   .foto_clasico3 {
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    height: 65%;
     justify-self: center;
-    margin-left: 1%; }
+    margin-left: 25px; }
   .foto_clasico4 {
     width: 90%;
-    height: 100%;
+    height: 100px;
     justify-self: center;
-    margin-left: 1%; } }
+    margin-left: 25px; }
+  .logo2C {
+    width: 100px;
+    height: 30px;
+    margin-top: 930px; } }
 
 @media screen and (max-width: 1350px) {
   .foto_nuevo4 {
