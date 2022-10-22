@@ -67,6 +67,9 @@ body {
 /* .logo2 {
     margin-top: 100px;
 } */
+.header {
+  margin-bottom: 50px; }
+
 .logo2 {
   background-image: url("../multimedia/DMC-Emblem.png");
   background-color: black;
@@ -158,7 +161,18 @@ body {
   transition: all 1s ease;
   grid-area: foto_clasico3; }
 
-.foto_clasico:hover, .foto_clasico2:hover, .foto_clasico3:hover {
+.foto_clasico4 {
+  background-image: url("../multimedia/clasico4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 25px;
+  border: solid 4px black;
+  padding: 15px;
+  transition: all 1s ease;
+  grid-area: foto_clasico4; }
+
+.foto_clasico:hover, .foto_clasico2:hover, .foto_clasico3:hover, .foto_clasico4:hover {
   transform: scale(1.1); }
 
 .texto_clasico {
@@ -205,7 +219,7 @@ body {
   align-self: end; }
 
 .foto_nuevo2 {
-  background-image: url("../multimedia/Alpha5-2");
+  background-image: url("../multimedia/Alpha5-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,9 +245,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -215px;
   display: inline-block;
-  width: 90%;
+  width: 95%;
   height: 500px;
   border: solid 4px black;
   align-self: start;
@@ -358,6 +371,11 @@ s .n1 {
   margin: 0;
   padding: 0; }
 
+.backgroundC {
+  background-image: url(../multimedia/BackgroundC.jpg);
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .texto__contacto {
   display: inline-block;
   color: white;
@@ -394,8 +412,8 @@ s .n1 {
   grid-area: rs1;
   width: 200px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .pr2 {
   justify-self: end;
@@ -403,8 +421,8 @@ s .n1 {
   grid-area: pr2;
   width: 200px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .rs2 {
   justify-self: start;
@@ -412,8 +430,8 @@ s .n1 {
   grid-area: rs2;
   width: 200px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .pr3 {
   justify-self: end;
@@ -421,8 +439,8 @@ s .n1 {
   grid-area: pr3;
   width: 200px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .rs3 {
   justify-self: start;
@@ -430,8 +448,7 @@ s .n1 {
   grid-area: rs3;
   width: 20px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin: 25px; }
 
 .pr4 {
   justify-self: end;
@@ -439,8 +456,8 @@ s .n1 {
   grid-area: pr4;
   width: 200px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .rs4 {
   justify-self: start;
@@ -448,8 +465,8 @@ s .n1 {
   grid-area: rs4;
   width: 200px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .pr1 {
   justify-self: end;
@@ -457,8 +474,8 @@ s .n1 {
   grid-area: pr1;
   width: 200px;
   height: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .logo2c {
   background-image: url("../multimedia/DMC-Emblem.png");
@@ -471,9 +488,9 @@ s .n1 {
   height: 60px;
   border: solid 2px white;
   padding: 15px;
-  margin-top: 28.2%; }
+  margin-top: 600px; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -514,12 +531,12 @@ s .n1 {
     grid-area: footer; }
   .contenedor_clasico {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 60% 30% 100% 30% 60%;
-    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3"; }
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 30% 100% 30% 60%;
+    grid-template-areas: "foto_clasico foto_clasico4" "texto_clasico texto_clasico" "foto_clasico2 foto_clasico2" "texto_clasico2 texto_clasico2" "foto_clasico3 foto_clasico3"; }
   .foto_clasico {
     grid-area: foto_clasico;
-    width: 30%;
+    width: 70%;
     height: 80%;
     display: flexbox;
     justify-self: center;
@@ -533,7 +550,14 @@ s .n1 {
     align-self: center; }
   .foto_clasico3 {
     grid-area: foto_clasico3;
-    width: 30%;
+    width: 50%;
+    height: 80%;
+    display: flexbox;
+    justify-self: center;
+    align-self: center; }
+  .foto_clasico4 {
+    grid-area: foto_clasico4;
+    width: 70%;
     height: 80%;
     display: flexbox;
     justify-self: center;
@@ -555,7 +579,7 @@ s .n1 {
   .logo2C {
     margin-top: 1200px; } }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 991px) {
   .contenedor_clasico {
     display: grid;
     grid-template-columns: 100%;
@@ -634,6 +658,42 @@ s .n1 {
   /* Clasico */
   .contenedor_clasico {
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35% 30% 55% 30% 35%;
+    grid-template-areas: "foto_clasico foto_clasico4" "texto_clasico texto_clasico" "foto_clasico2 foto_clasico2" "texto_clasico2 texto_clasico2" "foto_clasico3 foto_clasico2"; }
+  .texto_clasico {
+    width: 70%;
+    height: 110%; }
+  .texto_clasico2 {
+    width: 70%;
+    height: 110%; }
+  .foto_clasico {
+    width: 80%;
+    height: 65%;
+    justify-self: center; }
+  .foto_clasico2 {
+    width: 80%;
+    height: 60%;
+    justify-self: center;
+    margin-left: 25px; }
+  .foto_clasico3 {
+    width: 80%;
+    height: 65%;
+    justify-self: center;
+    margin-left: 25px; }
+  .foto_clasico4 {
+    width: 90%;
+    height: 100px;
+    justify-self: center;
+    margin-left: 25px; }
+  .logo2C {
+    width: 200px;
+    height: 60px;
+    margin-top: 1230px; } }
+
+@media screen and (max-width: 600px) {
+  .contenedor_clasico {
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 15% 40% 35% 40% 15%;
     grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3"; }
@@ -673,20 +733,6 @@ s .n1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -150px;
-    display: inline-block;
-    width: 90%;
-    height: 500px;
-    border: solid 4px black;
-    align-self: start;
-    justify-self: center; } }
-
-@media screen and (max-width: 1350px) {
-  .foto_nuevo4 {
-    background-image: url("../multimedia/Alpha5-4.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: inline-block;
     width: 90%;
     height: 500px;
@@ -707,24 +753,14 @@ s .n1 {
     margin-left: 5%;
     align-self: center; }
   .foto_nuevo2 {
-    background-image: url("../multimedia/Alpha5-2");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
     width: 90%;
     height: 200px;
     border: solid 4px black; }
   .foto_nuevo4 {
-    background-image: url("../multimedia/Alpha5-4.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
     width: 90%;
     height: 300px;
     border: solid 4px black;
-    align-self: start;
+    align-self: flex-end;
     justify-self: center; }
   .foto_nuevo3 {
     background-image: url("../multimedia/Alpha5-3.webp");
@@ -734,9 +770,7 @@ s .n1 {
     display: inline-block;
     width: 90%;
     height: 300px;
-    border: solid 4px black;
-    align-self: start;
-    justify-self: center; }
+    border: solid 4px black; }
   .gridN {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -762,9 +796,9 @@ s .n1 {
     grid-area: t2; }
   .n3 {
     justify-self: center;
-    align-self: start;
+    align-self: flex-end;
     grid-area: n3; }
   .n4 {
     justify-self: center;
-    align-self: start;
+    align-self: flex-end;
     grid-area: n4; } }

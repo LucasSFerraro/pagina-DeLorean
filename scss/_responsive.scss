@@ -8,7 +8,7 @@ $colores: (
     height: $height;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
     .main {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -66,19 +66,19 @@ $colores: (
 
     .contenedor_clasico {
         display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 60% 30% 100% 30% 60%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 80% 30% 100% 30% 60%;
         grid-template-areas:
-            "foto_clasico"
-            "texto_clasico"
-            "foto_clasico2"
-            "texto_clasico2"
-            "foto_clasico3";
+        "foto_clasico foto_clasico4"
+        "texto_clasico texto_clasico"
+        "foto_clasico2 foto_clasico2"
+        "texto_clasico2 texto_clasico2"
+        "foto_clasico3 foto_clasico3";
     }
 
     .foto_clasico {
         grid-area: foto_clasico;
-        @include sizes(30%, 80%);
+        @include sizes(70%, 80%);
         display: flexbox;
         justify-self: center;
         align-self: center;
@@ -95,12 +95,18 @@ $colores: (
 
     .foto_clasico3 {
         grid-area: foto_clasico3;
-        @include sizes(30%, 80%);
+        @include sizes(50%, 80%);
         display: flexbox;
         justify-self: center;
         align-self: center;
     }
-
+    .foto_clasico4 {
+        grid-area: foto_clasico4;
+        @include sizes(70%, 80%);
+        display: flexbox;
+        justify-self: center;
+        align-self: center;
+    }
 
     .texto_clasico {
         grid-area: texto_clasico;
@@ -123,7 +129,7 @@ $colores: (
     }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 991px) {
 
     .contenedor_clasico {
         display: grid;
@@ -237,14 +243,14 @@ $colores: (
 /* Clasico */
 .contenedor_clasico {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 40% 35% 40% 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35% 30% 55% 30% 35%;
     grid-template-areas:
-        "foto_clasico"
-        "texto_clasico"
-        "foto_clasico2"
-        "texto_clasico2"
-        "foto_clasico3";
+        "foto_clasico foto_clasico4"
+        "texto_clasico texto_clasico"
+        "foto_clasico2 foto_clasico2"
+        "texto_clasico2 texto_clasico2"
+        "foto_clasico3 foto_clasico2";
 }
     .texto_clasico {
         @include sizes(70%, 110%);
@@ -260,7 +266,7 @@ $colores: (
     }
 
     .foto_clasico2 {
-        @include sizes(90%, 60%);
+        @include sizes(80%, 60%);
         justify-self: center;
         margin-left: 25px;
     }
@@ -277,18 +283,63 @@ $colores: (
         margin-left: 25px;
     }
     .logo2C {
-        @include sizes(100px, 30px);
-        margin-top: 930px;
+        @include sizes(200px, 60px);
+        margin-top: 1230px;
     }
 }
-
+@media screen and (max-width: 600px) {
+    .contenedor_clasico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 40% 35% 40% 15%;
+        grid-template-areas:
+            "foto_clasico"
+            "texto_clasico"
+            "foto_clasico2"
+            "texto_clasico2"
+            "foto_clasico3";
+    }
+        .texto_clasico {
+            @include sizes(70%, 110%);
+        }
+    
+        .texto_clasico2 {
+            @include sizes(70%, 110%);
+        }
+    
+        .foto_clasico {
+            @include sizes(80%, 65%);
+            justify-self: center;
+        }
+    
+        .foto_clasico2 {
+            @include sizes(90%, 60%);
+            justify-self: center;
+            margin-left: 25px;
+        }
+    
+        .foto_clasico3 {
+            @include sizes(80%, 65%);
+            justify-self: center;
+            margin-left: 25px;
+        }
+    
+        .foto_clasico4 {
+            @include sizes(90%, 100px);
+            justify-self: center;
+            margin-left: 25px;
+        }
+        .logo2C {
+            @include sizes(100px, 30px);
+            margin-top: 930px;
+        }
+}
 @media screen and (max-width: 1350px) {
     .foto_nuevo4 {
         background-image: url("../multimedia/Alpha5-4.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -150px;
 
         display: inline-block;
 
@@ -300,23 +351,6 @@ $colores: (
     }
 }
 
-@media screen and (max-width: 1350px) {
-    .foto_nuevo4 {
-        background-image: url("../multimedia/Alpha5-4.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-
-        display: inline-block;
-
-        width: 90%;
-        height: 500px;
-        border: solid 4px black;
-        align-self: start;
-        justify-self: center;
-    }
-}
 
 @media screen and (max-width: 750px) {
     .foto_nuevo{
@@ -334,29 +368,14 @@ $colores: (
         align-self: center;
     }
     .foto_nuevo2 {
-        background-image: url("../multimedia/Alpha5-2");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
-        display: inline-block;
-    
-        width: 90%;
-        height: 200px;
+        @include sizes (90%, 200px);
         border: solid 4px black;
     }
     .foto_nuevo4 {
-        background-image: url("../multimedia/Alpha5-4.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        display: inline-block;
-
         width: 90%;
         height: 300px;
         border: solid 4px black;
-        align-self: start;
+        align-self: flex-end;
         justify-self: center;
     }
 
@@ -371,8 +390,6 @@ $colores: (
         width: 90%;
         height: 300px;
         border: solid 4px black;
-        align-self: start;
-        justify-self: center;
     }
 
     .gridN {
@@ -413,13 +430,13 @@ $colores: (
 
     .n3 {
         justify-self: center;
-        align-self: start;
+        align-self: flex-end;
         grid-area: n3;
     }
 
     .n4 {
         justify-self: center;
-        align-self: start;
+        align-self: flex-end;
         grid-area: n4;
     }
 }

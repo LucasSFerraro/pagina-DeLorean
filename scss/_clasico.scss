@@ -52,9 +52,20 @@
     transition: all 1s ease;
     grid-area: foto_clasico3;
 }
+.foto_clasico4 {
+    background-image: url("../multimedia/clasico4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    margin: 25px;
+    border: solid 4px black;
+    padding: 15px;
+    transition: all 1s ease;
+    grid-area: foto_clasico4;
+}
 
-.foto_clasico:hover, .foto_clasico2:hover, .foto_clasico3:hover{
+.foto_clasico:hover, .foto_clasico2:hover, .foto_clasico3:hover, .foto_clasico4:hover {
     transform: scale(1.1);
 }
 .texto_clasico {
