@@ -69,11 +69,11 @@ $colores: (
         grid-template-columns: 50% 50%;
         grid-template-rows: 80% 30% 100% 30% 60%;
         grid-template-areas:
-        "foto_clasico foto_clasico4"
-        "texto_clasico texto_clasico"
-        "foto_clasico2 foto_clasico2"
-        "texto_clasico2 texto_clasico2"
-        "foto_clasico3 foto_clasico3";
+            "foto_clasico foto_clasico4"
+            "texto_clasico texto_clasico"
+            "foto_clasico2 foto_clasico2"
+            "texto_clasico2 texto_clasico2"
+            "foto_clasico3 foto_clasico3";
     }
 
     .foto_clasico {
@@ -100,6 +100,7 @@ $colores: (
         justify-self: center;
         align-self: center;
     }
+
     .foto_clasico4 {
         grid-area: foto_clasico4;
         @include sizes(70%, 80%);
@@ -124,8 +125,77 @@ $colores: (
         align-self: center;
     }
 
-    .logo2C{
-        margin-top: 1200px;
+    .logo2C {
+        margin-top: 1450px;
+    }
+
+    /* Conceptos */
+    .contenedor_conceptos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 15% 20% 10% 20% 5% 20% 10%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "c1"
+            "tc1"
+            "c2"
+            "tc2"
+            "c3"
+            "tc3"
+            "c4"
+            "tc4";
+    }
+
+    .c1 {
+        @include sizes(65%, 400px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc1 {
+        @include sizes(65%, 85%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c2 {
+        @include sizes(65%, 400px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc2 {
+        @include sizes(65%, 75%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c3 {
+        @include sizes(65%, 400px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc3 {
+        @include sizes(65%, 100%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c4 {
+        @include sizes(65%, 400px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc4 {
+        @include sizes(65%, 55%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .logo2cc {
+        margin-top: 450px;
     }
 }
 
@@ -134,13 +204,14 @@ $colores: (
     .contenedor_clasico {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 35% 35% 65% 35% 35%;
+        grid-template-rows: 35% 35% 65% 35% 35% 1%;
         grid-template-areas:
             "foto_clasico"
             "texto_clasico"
             "foto_clasico2"
             "texto_clasico2"
             "foto_clasico3"
+            "foto_clasico4"
         ;
     }
 
@@ -181,6 +252,82 @@ $colores: (
         align-self: center;
     }
 
+    .foto_clasico4 {
+        visibility: hidden;
+    }
+
+    .logo2C {
+        margin-top: 950px;
+    }
+
+    /* Conceptos */
+    .contenedor_conceptos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 25% 10% 20% 8% 15% 15%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "c1"
+            "tc1"
+            "c2"
+            "tc2"
+            "c3"
+            "tc3"
+            "c4"
+            "tc4";
+    }
+
+    .c1 {
+        @include sizes(80%, 300px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc1 {
+        @include sizes(80%, 95%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c2 {
+        @include sizes(80%, 400px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc2 {
+        @include sizes(80%, 75%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c3 {
+        @include sizes(80%, 300px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc3 {
+        @include sizes(80%, 100%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c4 {
+        @include sizes(80%, 250px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc4 {
+        @include sizes(80%, 55%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .logo2cc {
+        margin-top: 700px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -240,18 +387,21 @@ $colores: (
         padding: 2px;
         margin: 20px;
     }
-/* Clasico */
-.contenedor_clasico {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 35% 30% 55% 30% 35%;
-    grid-template-areas:
-        "foto_clasico foto_clasico4"
-        "texto_clasico texto_clasico"
-        "foto_clasico2 foto_clasico2"
-        "texto_clasico2 texto_clasico2"
-        "foto_clasico3 foto_clasico2";
-}
+
+    /* Clasico */
+    .contenedor_clasico {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 30% 55% 30% 35% 1%;
+        grid-template-areas:
+            "foto_clasico"
+            "texto_clasico"
+            "foto_clasico2"
+            "texto_clasico2"
+            "foto_clasico3"
+            "foto_clasico4";
+    }
+
     .texto_clasico {
         @include sizes(70%, 110%);
     }
@@ -278,62 +428,175 @@ $colores: (
     }
 
     .foto_clasico4 {
-        @include sizes(90%, 100px);
-        justify-self: center;
-        margin-left: 25px;
+        visibility: hidden;
     }
+
     .logo2C {
         @include sizes(200px, 60px);
         margin-top: 1230px;
     }
 }
+
 @media screen and (max-width: 600px) {
     .contenedor_clasico {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 15% 40% 35% 40% 15%;
+        grid-template-rows: 15% 40% 35% 40% 15% 1%;
         grid-template-areas:
             "foto_clasico"
             "texto_clasico"
             "foto_clasico2"
             "texto_clasico2"
-            "foto_clasico3";
+            "foto_clasico3"
+            "foto_clasico4";
     }
-        .texto_clasico {
-            @include sizes(70%, 110%);
-        }
-    
-        .texto_clasico2 {
-            @include sizes(70%, 110%);
-        }
-    
-        .foto_clasico {
-            @include sizes(80%, 65%);
-            justify-self: center;
-        }
-    
-        .foto_clasico2 {
-            @include sizes(90%, 60%);
-            justify-self: center;
-            margin-left: 25px;
-        }
-    
-        .foto_clasico3 {
-            @include sizes(80%, 65%);
-            justify-self: center;
-            margin-left: 25px;
-        }
-    
-        .foto_clasico4 {
-            @include sizes(90%, 100px);
-            justify-self: center;
-            margin-left: 25px;
-        }
-        .logo2C {
-            @include sizes(100px, 30px);
-            margin-top: 930px;
-        }
+
+    .texto_clasico {
+        @include sizes(70%, 110%);
+    }
+
+    .texto_clasico2 {
+        @include sizes(70%, 110%);
+    }
+
+    .foto_clasico {
+        @include sizes(80%, 65%);
+        justify-self: center;
+    }
+
+    .foto_clasico2 {
+        @include sizes(90%, 60%);
+        justify-self: center;
+        margin-left: 25px;
+    }
+
+    .foto_clasico3 {
+        @include sizes(80%, 65%);
+        justify-self: center;
+        margin-left: 25px;
+    }
+
+    .foto_clasico4 {
+        visibility: hidden;
+    }
+
+    .logo2C {
+        @include sizes(100px, 30px);
+        margin-top: 930px;
+    }
+
+    .contenedor_conceptos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 13% 30% 13% 15% 13% 15% 13% 15%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "c1"
+            "tc1"
+            "c2"
+            "tc2"
+            "c3"
+            "tc3"
+            "c4"
+            "tc4";
+    }
+
+    .c1 {
+        @include sizes(80%, 200px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc1 {
+        @include sizes(80%, 100%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c2 {
+        @include sizes(80%, 200px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc2 {
+        @include sizes(80%, 110%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c3 {
+        @include sizes(80%, 200px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc3 {
+        @include sizes(80%, 110%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .c4 {
+        @include sizes(80%, 200px);
+        align-self: flex-end;
+        justify-self: center;
+    }
+
+    .tc4 {
+        @include sizes(80%, 110%);
+        align-self: flex-start;
+        justify-self: center;
+    }
+
+    .logo2cc {
+        @include sizes(100px, 30px);
+        margin-top: 900px;
+    }
+    /* Contacto */
+    .pr1{
+        width: 140px;
+        font-size: small;
+    }
+    .rs1{
+        width: 140px;
+        font-size: small;
+    }
+    .pr2{
+        width: 140px;
+        font-size: small;
+        
+    }
+    .rs2{
+        width: 140px;
+        font-size: small;
+        
+    }
+    .pr3{
+        width: 140px;
+        font-size: smaller;
+        height: 45px;
+        padding: 0px;
+        align-content: center;
+    }
+    .rs3{
+        width: 140px;
+        font-size: small;
+        margin: 0px;
+    }
+    .pr4{
+        width: 140px;
+        font-size: small;
+    }
+    .rs4{
+        width: 140px;
+        font-size: small;
+    }
+    .logo2c{
+        margin-top: 460px;
+    }
 }
+
 @media screen and (max-width: 1350px) {
     .foto_nuevo4 {
         background-image: url("../multimedia/Alpha5-4.jpg");
@@ -353,24 +616,26 @@ $colores: (
 
 
 @media screen and (max-width: 750px) {
-    .foto_nuevo{
+    .foto_nuevo {
         background-image: url("../multimedia/alpha5-1.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    
+
         display: inline-block;
-    
+
         width: 90%;
         height: 200px;
         border: solid 4px black;
         margin-left: 5%;
         align-self: center;
     }
+
     .foto_nuevo2 {
         @include sizes (90%, 200px);
         border: solid 4px black;
     }
+
     .foto_nuevo4 {
         width: 90%;
         height: 300px;
@@ -404,7 +669,7 @@ $colores: (
             "n3 n4";
     }
 
-    s .n1 {
+    .n1 {
         justify-self: center;
         align-self: center;
         grid-area: n1;

@@ -298,6 +298,19 @@ s .n1 {
   align-self: start;
   grid-area: n4; }
 
+.logo2cc {
+  background-image: url("../multimedia/DMC-Emblem.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 200px;
+  height: 60px;
+  border: solid 2px white;
+  padding: 15px;
+  margin-top: 800px; }
+
 .concepto1 {
   background-image: url("../multimedia/dmc-24.jpg");
   background-position: center;
@@ -306,9 +319,6 @@ s .n1 {
   display: inline-block;
   width: 80%;
   height: 600px;
-  margin: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
   border: solid 4px black;
   padding: 15px; }
 
@@ -320,9 +330,6 @@ s .n1 {
   display: inline-block;
   width: 80%;
   height: 600px;
-  margin: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
   border: solid 4px black;
   padding: 15px; }
 
@@ -334,9 +341,6 @@ s .n1 {
   display: inline-block;
   width: 80%;
   height: 600px;
-  margin: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
   border: solid 4px black;
   padding: 15px; }
 
@@ -348,9 +352,6 @@ s .n1 {
   display: inline-block;
   width: 80%;
   height: 600px;
-  margin: 25px;
-  margin-left: 10%;
-  margin-right: 10%;
   border: solid 4px black;
   padding: 15px; }
 
@@ -359,12 +360,8 @@ s .n1 {
   color: white;
   background-color: #3d3d3d;
   width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
   border: black 4px solid;
-  padding: 10px;
-  position: relative;
-  top: -50px; }
+  padding: 10px; }
 
 * {
   box-sizing: border-box;
@@ -488,7 +485,7 @@ s .n1 {
   height: 60px;
   border: solid 2px white;
   padding: 15px;
-  margin-top: 600px; }
+  margin-top: 550px; }
 
 @media screen and (min-width: 992px) {
   .main {
@@ -577,14 +574,63 @@ s .n1 {
     justify-self: center;
     align-self: center; }
   .logo2C {
-    margin-top: 1200px; } }
+    margin-top: 1450px; }
+  /* Conceptos */
+  .contenedor_conceptos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 15% 20% 10% 20% 5% 20% 10%;
+    gap: 0px 0px;
+    grid-template-areas: "c1" "tc1" "c2" "tc2" "c3" "tc3" "c4" "tc4"; }
+  .c1 {
+    width: 65%;
+    height: 400px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc1 {
+    width: 65%;
+    height: 85%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c2 {
+    width: 65%;
+    height: 400px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc2 {
+    width: 65%;
+    height: 75%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c3 {
+    width: 65%;
+    height: 400px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc3 {
+    width: 65%;
+    height: 100%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c4 {
+    width: 65%;
+    height: 400px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc4 {
+    width: 65%;
+    height: 55%;
+    align-self: flex-start;
+    justify-self: center; }
+  .logo2cc {
+    margin-top: 450px; } }
 
 @media screen and (max-width: 991px) {
   .contenedor_clasico {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 35% 35% 65% 35% 35%;
-    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3"; }
+    grid-template-rows: 35% 35% 65% 35% 35% 1%;
+    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3" "foto_clasico4"; }
   .texto_clasico {
     width: 90%;
     height: 100%;
@@ -616,7 +662,60 @@ s .n1 {
     margin-top: 50px;
     justify-self: center;
     display: flexbox;
-    align-self: center; } }
+    align-self: center; }
+  .foto_clasico4 {
+    visibility: hidden; }
+  .logo2C {
+    margin-top: 950px; }
+  /* Conceptos */
+  .contenedor_conceptos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 25% 10% 20% 8% 15% 15%;
+    gap: 0px 0px;
+    grid-template-areas: "c1" "tc1" "c2" "tc2" "c3" "tc3" "c4" "tc4"; }
+  .c1 {
+    width: 80%;
+    height: 300px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc1 {
+    width: 80%;
+    height: 95%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c2 {
+    width: 80%;
+    height: 400px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc2 {
+    width: 80%;
+    height: 75%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c3 {
+    width: 80%;
+    height: 300px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc3 {
+    width: 80%;
+    height: 100%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c4 {
+    width: 80%;
+    height: 250px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc4 {
+    width: 80%;
+    height: 55%;
+    align-self: flex-start;
+    justify-self: center; }
+  .logo2cc {
+    margin-top: 700px; } }
 
 @media screen and (max-width: 1023px) {
   .main {
@@ -658,9 +757,9 @@ s .n1 {
   /* Clasico */
   .contenedor_clasico {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 35% 30% 55% 30% 35%;
-    grid-template-areas: "foto_clasico foto_clasico4" "texto_clasico texto_clasico" "foto_clasico2 foto_clasico2" "texto_clasico2 texto_clasico2" "foto_clasico3 foto_clasico2"; }
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 30% 55% 30% 35% 1%;
+    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3" "foto_clasico4"; }
   .texto_clasico {
     width: 70%;
     height: 110%; }
@@ -682,10 +781,7 @@ s .n1 {
     justify-self: center;
     margin-left: 25px; }
   .foto_clasico4 {
-    width: 90%;
-    height: 100px;
-    justify-self: center;
-    margin-left: 25px; }
+    visibility: hidden; }
   .logo2C {
     width: 200px;
     height: 60px;
@@ -695,8 +791,8 @@ s .n1 {
   .contenedor_clasico {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 15% 40% 35% 40% 15%;
-    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3"; }
+    grid-template-rows: 15% 40% 35% 40% 15% 1%;
+    grid-template-areas: "foto_clasico" "texto_clasico" "foto_clasico2" "texto_clasico2" "foto_clasico3" "foto_clasico4"; }
   .texto_clasico {
     width: 70%;
     height: 110%; }
@@ -718,14 +814,92 @@ s .n1 {
     justify-self: center;
     margin-left: 25px; }
   .foto_clasico4 {
-    width: 90%;
-    height: 100px;
-    justify-self: center;
-    margin-left: 25px; }
+    visibility: hidden; }
   .logo2C {
     width: 100px;
     height: 30px;
-    margin-top: 930px; } }
+    margin-top: 930px; }
+  .contenedor_conceptos {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 30% 13% 15% 13% 15% 13% 15%;
+    gap: 0px 0px;
+    grid-template-areas: "c1" "tc1" "c2" "tc2" "c3" "tc3" "c4" "tc4"; }
+  .c1 {
+    width: 80%;
+    height: 200px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc1 {
+    width: 80%;
+    height: 100%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c2 {
+    width: 80%;
+    height: 200px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc2 {
+    width: 80%;
+    height: 110%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c3 {
+    width: 80%;
+    height: 200px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc3 {
+    width: 80%;
+    height: 110%;
+    align-self: flex-start;
+    justify-self: center; }
+  .c4 {
+    width: 80%;
+    height: 200px;
+    align-self: flex-end;
+    justify-self: center; }
+  .tc4 {
+    width: 80%;
+    height: 110%;
+    align-self: flex-start;
+    justify-self: center; }
+  .logo2cc {
+    width: 100px;
+    height: 30px;
+    margin-top: 900px; }
+  /* Contacto */
+  .pr1 {
+    width: 140px;
+    font-size: small; }
+  .rs1 {
+    width: 140px;
+    font-size: small; }
+  .pr2 {
+    width: 140px;
+    font-size: small; }
+  .rs2 {
+    width: 140px;
+    font-size: small; }
+  .pr3 {
+    width: 140px;
+    font-size: smaller;
+    height: 45px;
+    padding: 0px;
+    align-content: center; }
+  .rs3 {
+    width: 140px;
+    font-size: small;
+    margin: 0px; }
+  .pr4 {
+    width: 140px;
+    font-size: small; }
+  .rs4 {
+    width: 140px;
+    font-size: small; }
+  .logo2c {
+    margin-top: 460px; } }
 
 @media screen and (max-width: 1350px) {
   .foto_nuevo4 {
@@ -778,7 +952,7 @@ s .n1 {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "n1 n2" "t1 t2" "n3 n4"; }
-  s .n1 {
+  .n1 {
     justify-self: center;
     align-self: center;
     grid-area: n1; }

@@ -1,3 +1,19 @@
+.logo2cc{
+    background-image: url("../multimedia/DMC-Emblem.png");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: block;
+
+    width: 200px;
+    height: 60px;
+    border: solid 2px white;
+    padding: 15px;
+    margin-top: 800px;
+}
+
 .concepto1 {
     background-image: url("../multimedia/dmc-24.jpg");
     background-position: center;
@@ -8,9 +24,6 @@
 
     width: 80%;
     height: 600px;
-    margin: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
     border: solid 4px black;
     padding: 15px;
 }
@@ -25,9 +38,6 @@
 
     width: 80%;
     height: 600px;
-    margin: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
     border: solid 4px black;
     padding: 15px;
 }
@@ -42,9 +52,6 @@
 
     width: 80%;
     height: 600px;
-    margin: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
     border: solid 4px black;
     padding: 15px;
 }
@@ -59,9 +66,6 @@
 
     width: 80%;
     height: 600px;
-    margin: 25px;
-    margin-left: 10%;
-    margin-right: 10%;
     border: solid 4px black;
     padding: 15px;
 }
@@ -71,12 +75,8 @@
     color: white;
     background-color: rgb(61, 61, 61);
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
     border: black 4px solid;
     padding: 10px;
-    position: relative;
-    top: -50px
 }
 * {
     box-sizing: border-box;
